@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        .about{
+            margin: 2vh 2vw 2vh 2vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .about-img{height: 90vh;}
+        .about-image{margin: 2vh 2vw 2vh 2vw;}
+        @media screen and (max-width: 900px) {
+            .about{
+                display: block;
+                text-align: center;
+            }
+            .about-img{
+                width: 70vw;
+            }
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="about" id="about">
+        <div class="about-image">
+            <img src="{% static 'images/img14.avif' %}" alt="img" class="about-img">
+        </div>
+        <div class="about-content">
+            <h1 class="about-heading">Hi !</h1>
+            <h3 class="about-me">My name is Tejas Dhariwal. Few years back, I didn't knew anything about coding. But, in 2019 my father introduced me to the concenpt of coding and from then I never stopped and finding a lot of interest in it, today I am a full stack web developer and a python developer. Now I am looking for various opportunities to work on the ideas of other people and make their dream work live on the internet.
+
+        </div>
+        </h3>
+    </div>
+</body>
+</html>
