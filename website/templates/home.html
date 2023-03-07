@@ -21,6 +21,9 @@
         body {
             font-family: "Poppins", sans-serif;
         }
+        button{
+            cursor: pointer;
+        }
 
 
         /* Navbar */
@@ -402,6 +405,69 @@
             }
         }
 
+        /* Telling the user that what can i do for them */
+        .help{
+            margin: 2vh 2vw 5vh 2vw;
+        }
+        .help-heading{
+            margin-bottom: 2vh;
+        }
+        .help-info{
+            display: flex;
+            align-content: space-around;
+        }
+        .help-info1{
+            box-shadow: 2px 2px 2px 2px gray;
+            border-radius: 4px;
+            padding: 2vh 2vw 2vh 2vw;
+            margin: auto;
+            width: 40vw;
+            height: 65vh;
+        }
+        .help-info1-img{
+            border-radius: 5px;
+        }
+        .help-info1-btn{
+            width: 13vw;
+            height: 6vh;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: white;
+            font-weight: bolder;
+            margin-top: 1vh;
+            color:rgb(23, 22, 22);
+        }
+        .help-info1-btn:hover{
+            background-color: rgb(23, 22, 22);
+            transition: 0.5s;
+        }
+
+        .help-info2{
+            box-shadow: 2px 2px 2px 2px gray;
+            border-radius: 5px;
+            margin: auto;
+            width: 40vw;
+            height: 65vh;
+            padding: 2vh 2vw 2vh 2vw;
+        }
+        .help-info2-img{
+            border-radius: 5px;
+        }
+        .help-info2-btn{
+            margin-top: 1vh;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 10vw;
+            height: 5vh;
+            background-color: white;
+            font-weight: bolder;
+            color:rgb(23, 22, 22);
+        }
+        .help-info2-btn:hover{
+            background-color:rgb(23, 22, 22);
+            transition: 0.5s;
+        }
+
         /* Contact Section */
         .contact {
             margin: 10vh 2vw 10vh 2vw;
@@ -520,6 +586,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#help">Help</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </div>
             </div>
@@ -615,6 +682,28 @@
                     <span class="project2-status">Completed</span>
                     <form action="{% url 'gym' %}" method="post" class="project1-form">{% csrf_token %}
                         <button class="project2-view">View project</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Telling the user that what can i do for them -->
+        <div class="help" id="help">
+            <h1 class="help-heading">What can I do for you ?</h1>
+            <div class="help-info">
+                <div class="help-info1">
+                    <img src="{% static 'images/img11.avif' %}" alt="img" class="help-info1-img">
+                    <h3 class="help-info1-text">I can build a fully functional website for you to bring your business online.</h3>
+                    <form action="#contact">
+                        <button class="help-info1-btn">Ask for making a website</button>
+                    </form>
+                </div>
+                <div class="help-info2">
+                    <img src="{% static 'images/img15.avif' %}" alt="img" class="help-info2-img">
+                    <h3 class="help-info2-text">I can solve your problems with my coding skills.</h3>
+                    <form action="#contact">
+                        <button class="help-info2-btn">Ask for a problem</button>
                     </form>
                 </div>
             </div>
