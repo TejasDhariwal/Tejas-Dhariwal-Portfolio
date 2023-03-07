@@ -408,6 +408,7 @@
         /* Telling the user that what can i do for them */
         .help{
             margin: 2vh 2vw 5vh 2vw;
+            text-align: center;
         }
         .help-heading{
             margin-bottom: 2vh;
@@ -426,16 +427,19 @@
         }
         .help-info1-img{
             border-radius: 5px;
+            width: 40vw;
+            height: 45vh;
         }
         .help-info1-btn{
-            width: 13vw;
-            height: 6vh;
+            width: 150px;
+            height: 40px;
             border: 2px solid black;
             border-radius: 5px;
             background-color: white;
             font-weight: bolder;
             margin-top: 1vh;
             color:rgb(23, 22, 22);
+            padding: 5px 5px 5px 5px;
         }
         .help-info1-btn:hover{
             background-color: rgb(23, 22, 22);
@@ -452,20 +456,54 @@
         }
         .help-info2-img{
             border-radius: 5px;
+            width: 38vw;
+            height: 50vh;
         }
         .help-info2-btn{
             margin-top: 1vh;
             border: 2px solid black;
             border-radius: 5px;
-            width: 10vw;
-            height: 5vh;
+            width: 150px;
+            height: 40px;
             background-color: white;
             font-weight: bolder;
             color:rgb(23, 22, 22);
+            padding: 5px 5px 5px 5px;
         }
         .help-info2-btn:hover{
             background-color:rgb(23, 22, 22);
             transition: 0.5s;
+        }
+        @media screen and (max-width:1150px) {
+            .help-info2-img{
+                height: 45vh;
+            }
+        }
+        @media screen and (max-width:1000px) {
+            .help-info{
+                display: block;
+            }
+            .help-heading{
+                margin-bottom: 5vh;
+            }
+            .help-info1{
+                margin-bottom: 5vh;
+                width: 80vw;
+                height: 68vh;
+            }
+            .help-info1-img{
+                width: 70vw;
+                height: 50vh;
+            }
+            .help-info2{
+                width: 80vw;
+                height: 68vh;
+            }
+            .help-info2-img{
+                width: 70vw;
+                height: 50vh;
+            }
+            
         }
 
         /* Contact Section */
